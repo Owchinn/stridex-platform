@@ -1,0 +1,270 @@
+.pageTitle {
+  font-size: 2rem;
+  color: var(--text-main);
+  margin-bottom: 2rem;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .statsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.statCard {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border: 1px solid var(--border-color);
+}
+
+.statHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.statIcon {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+}
+
+.statLabel {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.statValue {
+  font-size: 2rem;
+  font-weight: 800;
+  font-family: var(--font-heading);
+  color: var(--text-main);
+  margin-top: 0.5rem;
+}
+
+.statSubtext {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* Two Column Layout */
+.dashboardLayout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+@media (max-width: 1024px) {
+  .dashboardLayout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.sectionCard {
+  background: white;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  overflow: hidden;
+}
+
+.sectionHeader {
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #F8FAFC;
+}
+
+.sectionHeader h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--text-main);
+}
+
+.sectionBody {
+  padding: 0;
+}
+
+/* Events List */
+.eventItem {
+  display: flex;
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  gap: 1.5rem;
+  transition: background 0.2s;
+}
+
+.eventItem:last-child {
+  border-bottom: none;
+}
+
+.eventItem:hover {
+  background: #F8FAFC;
+}
+
+.eventImage {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.eventInfo {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.eventTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.25rem;
+}
+
+.eventDate {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.eventLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+.eventLink {
+  font-size: 0.85rem;
+  color: var(--primary-color);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.2s;
+}
+
+.eventLink:hover {
+  color: var(--primary-hover);
+  text-decoration: underline;
+}
+
+/* Orders List */
+.ordersTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.ordersTable th {
+  text-align: left;
+  padding: 1rem 1.5rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  font-weight: 600;
+  border-bottom: 1px solid var(--border-color);
+  background: #F8FAFC;
+}
+
+.ordersTable td {
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  vertical-align: top;
+}
+
+.orderRow:last-child td {
+  border-bottom: none;
+}
+
+.orderRow:hover td {
+  background: #F8FAFC;
+}
+
+.orderId {
+  font-weight: 600;
+  color: var(--primary-color);
+  font-size: 0.9rem;
+  display: block;
+  margin-bottom: 0.25rem;
+  text-decoration: none;
+}
+
+.orderId:hover {
+  text-decoration: underline;
+}
+
+.orderAmount {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--text-main);
+  margin-right: 0.5rem;
+}
+
+.orderDate {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.runnerName {
+  font-weight: 600;
+  color: var(--text-main);
+  font-size: 0.9rem;
+  display: block;
+}
+
+.runnerEmail {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  display: block;
+  margin-top: 0.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.originEvent {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-main);
+}
+
+.statusBadge {
+  display: inline-block;
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.statusPAID {
+  background: #DCFCE7;
+  color: #16A34A;
+}
+
+.statusPENDING {
+  background: #FEF3C7;
+  color: #D97706;
+}
+
+.statusCANCELLED {
+  background: #FEE2E2;
+  color: #DC2626;
+}

@@ -1,0 +1,28 @@
+.pageWrapper {
+  padding-top: 80px;
+  min-height: 100vh;
+  background-color: var(--surface-color);
+}
+
+.header {
+  background-color: white;
+  padding: 3rem 0;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+}
+
+.formContainer {
+  max-width: 1000px;
+  padding-bottom: 4rem;
+}

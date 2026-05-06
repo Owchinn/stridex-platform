@@ -1,0 +1,407 @@
+/* ==========================================
+   ADMIN REGISTRATIONS DASHBOARD STYLES
+   ========================================== */
+
+.page {
+  padding-bottom: 4rem;
+}
+
+.pageHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.pageTitle {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #0F172A;
+  margin-bottom: 0.25rem;
+}
+
+.pageSubtitle {
+  color: #64748B;
+  font-size: 0.9rem;
+}
+
+/* ── Summary Bar ── */
+.summaryBar {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.summaryCard {
+  flex: 1;
+  min-width: 150px;
+  background: white;
+  border: 1px solid #E2E8F0;
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.summaryLabel {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #64748B;
+}
+
+.summaryValue {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #0F172A;
+}
+
+.summaryValue em {
+  font-style: normal;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #64748B;
+}
+
+.summaryPaid { border-left: 3px solid #22c55e; }
+.summaryPaid .summaryValue { color: #15803d; }
+
+.summaryPending { border-left: 3px solid #f59e0b; }
+.summaryPending .summaryValue { color: #b45309; }
+
+.summaryCancelled { border-left: 3px solid #ef4444; }
+.summaryCancelled .summaryValue { color: #b91c1c; }
+
+/* ── Filter Bar ── */
+.filterBar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  padding: 0.75rem 1rem;
+  background: white;
+  border: 1px solid #E2E8F0;
+  border-radius: 10px;
+  color: #64748B;
+}
+
+.filterSelect {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #E2E8F0;
+  font-size: 0.875rem;
+  color: #0F172A;
+  background: #F8FAFC;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.filterSelect:focus {
+  outline: 2px solid #0052FF;
+  outline-offset: 1px;
+}
+
+/* ── Registration List ── */
+.regList {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background: white;
+  border: 1px solid #E2E8F0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.07);
+}
+
+.regHeaderRow {
+  display: grid;
+  grid-template-columns: 220px 220px 200px 1fr;
+  gap: 0;
+  background: #F8FAFC;
+  border-bottom: 2px solid #E2E8F0;
+  padding: 0;
+}
+
+.regHeaderRow > div {
+  padding: 0.75rem 1.25rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: #64748B;
+  border-right: 1px solid #E2E8F0;
+}
+
+.regHeaderRow > div:last-child {
+  border-right: none;
+}
+
+.regCard {
+  display: grid;
+  grid-template-columns: 220px 220px 200px 1fr;
+  gap: 0;
+  border-bottom: 1px solid #E2E8F0;
+  transition: background 0.15s ease;
+}
+
+.regCard:last-child {
+  border-bottom: none;
+}
+
+.regCard:hover {
+  background: #FAFCFF;
+}
+
+/* ── Columns ── */
+.colPayment,
+.colRegistration,
+.colBreakdown,
+.colDetails {
+  padding: 1.25rem;
+  font-size: 0.85rem;
+  border-right: 1px solid #E2E8F0;
+}
+
+.colDetails {
+  border-right: none;
+}
+
+/* ── Payment Column ── */
+.amount {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #0F172A;
+  margin-bottom: 0.5rem;
+}
+
+.badgeRow {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 0.75rem;
+}
+
+.orderId {
+  background: #EFF6FF;
+  color: #1D4ED8;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+.badge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  border-radius: 99px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.badgePaid { background: #DCFCE7; color: #15803D; }
+.badgePending { background: #FEF3C7; color: #92400E; }
+.badgeCancelled { background: #FEE2E2; color: #B91C1C; }
+
+.metaLine {
+  color: #475569;
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+.metaLine strong {
+  color: #94A3B8;
+  font-weight: 600;
+}
+
+.metaLineEmail {
+  color: #0052FF;
+  font-size: 0.8rem;
+  margin-bottom: 0.25rem;
+  word-break: break-all;
+}
+
+.divider {
+  height: 1px;
+  background: #E2E8F0;
+  margin: 0.75rem 0;
+}
+
+/* ── Registration Column ── */
+.categoryBadge {
+  background: #EFF6FF;
+  color: #1D4ED8;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+}
+
+.distanceBadge {
+  display: inline-block;
+  background: #0052FF;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 800;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  margin: 0.5rem 0;
+}
+
+.runnerName {
+  font-weight: 700;
+  color: #0F172A;
+  font-size: 0.9rem;
+  margin-bottom: 0.2rem;
+}
+
+/* ── Breakdown Column ── */
+.breakdownTitle {
+  font-weight: 700;
+  color: #0F172A;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.breakdownRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: #475569;
+  padding: 0.2rem 0;
+  line-height: 1.5;
+}
+
+.breakdownTotal {
+  font-weight: 800;
+  color: #0052FF;
+  border-top: 1px solid #E2E8F0;
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+/* ── Details / Tabs Column ── */
+.tabs {
+  display: flex;
+  gap: 0;
+  margin-bottom: 0.75rem;
+  border-bottom: 1px solid #E2E8F0;
+}
+
+.tab {
+  padding: 0.4rem 0.75rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #64748B;
+  background: none;
+  border: none;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  transition: all 0.15s ease;
+  font-family: inherit;
+}
+
+.tab:hover { color: #0052FF; }
+
+.tabActive {
+  color: #0052FF;
+  border-bottom-color: #0052FF;
+}
+
+.tabContent {
+  font-size: 0.8rem;
+}
+
+.detailList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.detailList li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.detailList li > span {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #94A3B8;
+}
+
+.detailList li > strong {
+  color: #0F172A;
+  font-weight: 500;
+}
+
+.logList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.logList li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  padding: 0.5rem;
+  background: #F8FAFC;
+  border-radius: 6px;
+  border-left: 2px solid #0052FF;
+}
+
+.logTime {
+  font-size: 0.7rem;
+  color: #94A3B8;
+  font-weight: 600;
+}
+
+.emptyTab {
+  color: #94A3B8;
+  font-style: italic;
+  font-size: 0.8rem;
+}
+
+/* Empty State */
+.emptyState {
+  text-align: center;
+  padding: 4rem;
+  color: #94A3B8;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #E2E8F0;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .regHeaderRow,
+  .regCard {
+    grid-template-columns: 1fr 1fr;
+  }
+  .regHeaderRow > div:nth-child(3),
+  .regHeaderRow > div:nth-child(4) { display: none; }
+}
+
+@media (max-width: 700px) {
+  .regHeaderRow,
+  .regCard {
+    grid-template-columns: 1fr;
+  }
+  .regHeaderRow { display: none; }
+  .colPayment, .colRegistration, .colBreakdown, .colDetails {
+    border-right: none;
+    border-bottom: 1px solid #E2E8F0;
+  }
+}

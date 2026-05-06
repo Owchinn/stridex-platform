@@ -1,0 +1,179 @@
+/* Apply As Organizer Page */
+
+.pageWrapper {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 1.5rem;
+  background: linear-gradient(135deg, #f0f4ff 0%, #ffffff 50%, #f8f0ff 100%);
+}
+
+.formCard {
+  background: white;
+  border-radius: 20px;
+  padding: 3rem;
+  max-width: 640px;
+  width: 100%;
+  box-shadow: 0 20px 60px rgba(0, 82, 255, 0.08), 0 4px 16px rgba(0,0,0,0.06);
+  border: 1px solid #E2E8F0;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.iconBadge {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.title {
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: #0F172A;
+  margin-bottom: 0.75rem;
+}
+
+.subtitle {
+  color: #64748B;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* Alerts */
+.alertWarning {
+  background: #FEF3C7;
+  border: 1px solid #FCD34D;
+  border-radius: 10px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #92400E;
+}
+
+.alertWarning strong {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+  font-size: 0.95rem;
+}
+
+.alertWarning p {
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+/* Success State */
+.successState {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.successIcon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.successState h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #0F172A;
+  margin-bottom: 0.75rem;
+}
+
+.successState p {
+  color: #64748B;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* Form */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.inputGroup label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.inputGroup input,
+.inputGroup textarea {
+  padding: 0.75rem 1rem;
+  border: 1.5px solid #E2E8F0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  color: #0F172A;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  background: white;
+}
+
+.inputGroup input:focus,
+.inputGroup textarea:focus {
+  outline: none;
+  border-color: #0052FF;
+  box-shadow: 0 0 0 3px rgba(0, 82, 255, 0.1);
+}
+
+.hint {
+  font-size: 0.75rem;
+  color: #94A3B8;
+  margin-top: -0.2rem;
+}
+
+/* Info Box */
+.infoBox {
+  background: #F0F4FF;
+  border: 1px solid #C7D7FF;
+  border-radius: 10px;
+  padding: 1.25rem 1.5rem;
+  color: #1E40AF;
+}
+
+.infoBox strong {
+  display: block;
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.infoBox ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.infoBox ul li {
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 580px) {
+  .formCard {
+    padding: 2rem 1.5rem;
+  }
+  .formGrid {
+    grid-template-columns: 1fr;
+  }
+}

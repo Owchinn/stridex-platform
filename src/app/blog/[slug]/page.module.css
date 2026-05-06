@@ -1,0 +1,80 @@
+.article {
+  min-height: 100vh;
+}
+
+.hero {
+  position: relative;
+  height: 55vh;
+  min-height: 350px;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 4rem;
+}
+
+.heroImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.8));
+  z-index: -1;
+}
+
+.heroContent {
+  color: white;
+  max-width: 800px;
+}
+
+.date {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.8;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.author {
+  font-size: 1rem;
+  opacity: 0.7;
+}
+
+.content {
+  max-width: 800px;
+  padding: 4rem 2rem;
+}
+
+.excerpt {
+  font-size: 1.3rem;
+  color: var(--text-main);
+  font-weight: 500;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.body p {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
